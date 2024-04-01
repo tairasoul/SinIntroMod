@@ -1,0 +1,5 @@
+#!/bin/bash
+
+msbuild -p:Configuration=Release
+rm "/home/$USER/.local/share/Steam/steamapps/common/VA Proxy Demo/BepInEx/plugins/IntroMusicAdder.dll"
+cp ./bin/Release/net48/IntroMusicAdder.dll "/home/$USER/.local/share/Steam/steamapps/common/VA Proxy Demo/BepInEx/plugins/"
